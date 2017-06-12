@@ -8,6 +8,8 @@ class DemoController < ApplicationController
 
   def hello
     @array = [1,2,99,4,5]
+    @id = params['id']
+    @page = params[:page]
     render('hello')
   end
 

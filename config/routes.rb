@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'test/new'
-
   root 'demo#index'
-
+  # get ':controller(/:action(/:id))'   #default route
+  get 'test/new'
   get 'demo/index'
   get 'demo/hello'
   get 'demo/other_hello'
