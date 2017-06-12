@@ -1,1 +1,7 @@
 <h1>Second View from hello</h1>
+
+<% @array.each do |n| %>
+    <%= n %> <br />
+<% end %>
+<br />
+<%= link_to('Index page', {:action => 'index'}) %> <br />
